@@ -188,7 +188,6 @@ public class DashboardIDEB extends Application {
 	private Button getFileButton() {
 		Button button = new Button("Abrir CSV");
 		button.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
 			public void handle(ActionEvent arg0) {
 				FileChooser fileChooser = new FileChooser();
 				fileChooser.setTitle("Selecione um CSV");
@@ -205,7 +204,6 @@ public class DashboardIDEB extends Application {
 	private Button classifyStrButton() {
 		Button button = new Button("Classificar");
 		button.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
 			public void handle(ActionEvent arg0) {
 				if (instanceField.getText() == null || instanceField.getText().isEmpty()) {
 					Alert alert = new Alert(AlertType.WARNING);
@@ -232,7 +230,6 @@ public class DashboardIDEB extends Application {
 	private Button classifyFileButton() {
 		Button button = new Button("Classificar");
 		button.setOnAction(new EventHandler<ActionEvent>() {
-			@Override
 			public void handle(ActionEvent arg0) {
 				if (csv == null) {
 					Alert alert = new Alert(AlertType.WARNING);
